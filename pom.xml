@@ -16,7 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.url>http://p.yusukekamiyamane.com/icons/downloads/fugue-icons-${project.version}.zip</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
+        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${version.unrevise}</destDir>
     </properties>
 
     <developers>
@@ -71,14 +71,10 @@
                                 <echo message="download archive"/>
                                 <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
                                 <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/icons"/>
                                 <echo message="moving resources"/>
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/icons"/>
-                                    <fileset dir="${project.build.directory}/icons-shadowless"/>
-                                    <fileset dir="${project.build.directory}/bonus"/>
-                                    <fileset file="${project.build.directory}/combination.png"/>
-                                    <fileset file="${project.build.directory}/README.txt"/>
                                 </move>
                             </target>
                         </configuration>

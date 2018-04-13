@@ -1,5 +1,5 @@
-WebJar for Open Icon Library
+WebJar for Fugue Icon Collection
 
 More info: http://webjars.org
 
-Upstream: https://sourceforge.net/projects/openiconlibrary
+Upstream: https://github.com/yusukekamiyamane/fugue-icons
