@@ -10,7 +10,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>fugue-icons</artifactId>
-    <version>3.5.6</version>
+    <version>3.5.7-SNAPSHOT</version>
     <name>Open Icon Library</name>
     <description>WebJar for Fugue Icon Collection</description>
   
@@ -42,7 +42,7 @@
         <url>http://github.com/webjars/fugue-icons</url>
         <connection>scm:git:https://github.com/webjars/fugue-icons.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/fugue-icons.git</developerConnection>
-        <tag>fugue-icons-3.5.6</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <build>
