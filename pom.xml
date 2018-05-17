@@ -10,7 +10,7 @@
 
     <groupId>org.webjars</groupId>
     <artifactId>fugue-icons</artifactId>
-    <version>3.5.6-SNAPSHOT</version>
+    <version>3.5.6</version>
     <name>Open Icon Library</name>
     <description>WebJar for Fugue Icon Collection</description>
   
@@ -42,7 +42,7 @@
         <url>http://github.com/webjars/fugue-icons</url>
         <connection>scm:git:https://github.com/webjars/fugue-icons.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/fugue-icons.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>fugue-icons-3.5.6</tag>
     </scm>
     
     <build>
@@ -71,13 +71,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/icons"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}/icons" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/icons"/>
+                                    <fileset dir="${project.build.directory}/icons" />
                                 </move>
                             </target>
                         </configuration>
